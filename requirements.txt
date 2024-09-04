@@ -1,0 +1,63 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# LangChain and LLMs
+langchain
+openai
+
+# Vector stores
+faiss-cpu
+pinecone-client
+pymilvus
+
+# Database
+motor
+pymongo
+
+# Async utilities
+httpx
+
+# Data processing
+pandas
+numpy
+
+# Configuration
+python-dotenv
+pydantic[email]
+pydantic-settings
+
+# Caching
+redis
+
+# Monitoring and observability
+prometheus-client
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-jaeger
+
+# Testing
+pytest
+pytest-asyncio
+
+# Code quality
+black
+flake8
+isort
+
+# Security
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Performance
+uvloop
+
+# LLM optimization
+llm-lingua
+
+# Dependency injection
+dependency-injector
+
+# Utilities
+python-multipart
+aiofiles

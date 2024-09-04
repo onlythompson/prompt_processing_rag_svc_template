@@ -1,0 +1,30 @@
+apiVersion: jaegertracing.io/v1
+kind: Jaeger
+metadata:
+  name: rag-jaeger
+spec:
+  strategy: allInOne
+  allInOne:
+    image: jaegertracing/all-in-one:1.22
+    options:
+      log-level: info
+  storage:
+    type: memory
+    options:
+      memory:
+        max-traces: 100000
+  ingress:
+    enabled: false
+  agent:
+    strategy: DaemonSet
+  ui:
+    options:
+      dependencies:
+        menuEnabled: false
+      tracking:
+        gaID: UA-000000-2
+  sampling:
+    options:
+      default_strategy:
+        type: probabilistic
+        param: 1
